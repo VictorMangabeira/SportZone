@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./SportZone.css">
+    <title>SportZone</title>
+</head>
+<body>
+
+    <!-- Parte de cima -->
+     <header>
+        <img src="logo.png" alt="logo do SportZone" width="100" height="100">
+        <h1>SportZone</h1>
+        <!-- Navegação -->
+     <nav>
+        <ul>
+            <li><a href="#jogos">Jogos</a></li>
+            <li><a href="#tabela">Tabela</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+     </nav>
+     </header>
+
+    
+
+    <!--Corpo da página  -->
+     <main>
+        <!-- Seções da página -->
+        <section>
+            <h2>Bem-vindo ao SportZone</h2>
+            <p>Descubra os melhores jogos esportivos da temporada! Nossa plataforma oferece informaçõescompletas sobre partidas, estatísticas e muito mais. Junte-se à comunidade esportiva mais apaixonada do pais</p>
+            <p>🏀 ⚽ 🏐 🎾</p>
+            <p>Acompanhe seus times favoritos, veja estatísticas detalhadas e não perca nenhum jogo inportante. Nossa equipe trabalha 24 horas para trazer as melhores infomações diretamente para você</p>
+        </section>
+        <!-- Jogos -->
+        <section id="jogos">
+            <h3>Próximos Jogos</h3>
+            <p>⚽</p>
+            <h4>flamengo vs Palmeiras</h4>
+            <p>Campeonato Brasileiro</p>
+            <p>Domingo, 15:30</p>
+            <p>🏀</p>
+            <h4>Laker vs Warrios</h4>
+            <p>NBA Finals</p>
+            <p>Segunda, 21:00</p>
+            <p>🎾</p>
+            <h4>Djokovic vs Nadal</h4>
+            <p>Roland Garros</p>
+            <p>Terça, 14:00</p>
+        </section>
+        <!-- Tabela -->
+        <section id="tabela">
+            <table border="1">
+                <!-- Titulo da tabela -->
+                <caption>Classificação do Campeonato</caption>
+                <!-- Cabeça da tabela -->
+                 <header>
+                    <!-- Linhas horizontal da tabela -->
+                    <tr>
+                        <th>Posição</th>
+                        <th>Time</th>
+                        <th>Jogos</th>
+                        <th>Vitórias</th>
+                        <th>Empates</th>
+                        <th>Derrotas</th>
+                        <th>Pontos</th>
+                    </tr>
+                 </header>
+
+                 <!-- Corpo da tabela -->
+                  <tbody>
+                    <tr>
+                        <!-- Colunas -->
+                        <td>1°</td>
+                        <td>Palmeiras</td>
+                        <td>28</td>
+                        <td>20</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>2°</td>
+                        <td>Flamengo</td>
+                        <td>28</td>
+                        <td>18</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>58</td>
+                    </tr>
+                    <tr>
+                        <td>3°</td>
+                        <td>São Paulo</td>
+                        <td>28</td>
+                        <td>16</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>52</td>
+                    </tr>
+                    <tr>
+                        <td>4°</td>
+                        <td>Corinthians</td>
+                        <td>28</td>
+                        <td>15</td>
+                        <td>3</td>
+                        <td>12</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>5°</td>
+                        <td>Santos</td>
+                        <td>28</td>
+                        <td>13</td>
+                        <td>3</td>
+                        <td>12</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>6°</td>
+                        <td>Grêmio</td>
+                        <td>28</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>10</td>
+                        <td>42</td>
+                    </tr>
+                  </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Entre em Contato</h2>
+            <p>tem alguma dúvida ou sugestão sobre nossos jogos esportivos? Adoraríamos ouvir você! Preencha o formulário abaixo e nossa equipe entrará em contato em breve.</p>
+
+            <!-- Formulario -->
+
+            <form action="#">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" required>
+                <label for="telefone">Telefone(opcional)</label>
+                <input type="text" name="telefone" id="telefone">
+                <label for="mensagem">Mansagem</label>
+                <textarea 
+                     name="mensagem" 
+                     id="mensagem"
+                     rows="4"
+                     cols="30"
+                     required>
+                </textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+     </main>
+     
+     <!-- Texto final da pagina -->
+      <footer>
+        <p>2025 SportZone. Todos os direitos reservados. Desenvolvidos com ❤️ para os amantes do esporte
+        </p>
+      </footer>
+    
+</body>
+</html>

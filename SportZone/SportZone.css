@@ -1,0 +1,151 @@
+/* Gonfiguração universal da página*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+
+body
+{
+    font-family: system-ui;
+    
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* Personalizar a seleção de texto */
+
+::selection
+{
+    background-color: #e5e7eb;
+    color: #2563eb;
+}
+
+/* Titulo principal  */
+
+h1
+{
+    margin-bottom: 10px;
+    line-height: 1.25;
+    font-size: 2.4rem;
+    color: #e5e7eb; 
+}
+
+/* Corpo superior da página */
+
+header
+{
+    background-image:  linear-gradient(90deg, #2563eb 50% #16a34a 100%);
+    padding: 0px 20px;
+    text-align: center;
+   
+}
+
+/* Navegação/atalho da pagina */
+
+nav
+{
+    background-color: linear-gradient(90deg, #2563eb 70% #16a34a 30%);
+    position:sticky;
+    top: 0;
+}
+
+/* Configuração da posição e estilo do navegador/atalho da pagina */
+
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav a
+{
+    color: #e5e7eb;
+    padding: 20px;
+}
+
+nav a:hover
+{
+    background-color: #2563eb;
+    color: #e5e7eb;
+    border-radius: 5px;
+}
+
+
+/* Estrutura principal/corpo da pagina */
+
+main
+{
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Configuração da sections/seções meio da pagina */
+
+main > section
+{
+    background-color: #e5e7eb;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+    border-radius: 1px;
+    text-align: center;
+}
+
+/* Configuração da tabela */
+
+table
+{
+    width: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 10px;
+    border-collapse: collapse;
+    border-bottom: #1f2937;
+
+}
+ 
+/* Parte de cima da tabela/Legendas */
+table th
+{
+    background-color: #2563eb;
+    color: #e5e7eb;
+    padding: 5px;
+    border: 10px;
+}
+
+/* Parte de dentro da tabela */
+table td
+{
+    padding: 10px;
+    border-bottom: 1px solid #d1d5db;
+}
+
+
+/* Configuração do formulario */
+
+form
+{
+    display: grid;
+    gap: 15px;
+}
+
+/* Texto dentro do formulario */
+
+label
+{
+    font-weight: bold;
+    color: #1f2937;
+}
+
+input
+/* Como colocar infomaçoes dentro da mensagem de etxto * placeholder"teste" */
