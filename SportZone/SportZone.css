@@ -81,6 +81,31 @@ nav a:hover
 
 /* Estrutura principal/corpo da pagina */
 
+/* Segundo titulo  */
+h2
+{
+    font-size: 1.9rem;
+    margin-top: 35px;
+
+}
+
+p
+{
+    font-size: 1.49rem;
+}
+/* Titulo da primeira seção */
+h3
+{
+    font-size: 1.50rem;
+    margin-top: 50px;
+}
+/* Titulo dentro da primeira seção */
+h4
+{
+    font-size: 1.3rem;
+}
+
+/* Corpo da pagina */
 main
 {
     max-width: 950px;
@@ -90,44 +115,83 @@ main
 
 /* Configuração da sections/seções meio da pagina */
 
-main > section
+main section
 {
-    background-color: #e5e7eb;
+    background-color: #ffffff;
     color: #1f2937;
-    border: 1px solid #d1d5db;
     border-radius: 1px;
     text-align: center;
+    margin-bottom: 100px;
 }
+
+/* Configuração especifica, usamos O ."nome da class" */
+.Dias
+{
+    color: #2563eb;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.Campeonato
+{
+    font-size: 17px;
+}
+
+.fonte
+{
+    font-size: 30px;
+}
+
+
+
 
 /* Configuração da tabela */
 
 table
 {
     width: 100%;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: #e5e7eb;
+    background-color: #ffffff;
     color: #1f2937;
     padding: 10px;
     border-collapse: collapse;
-    border-bottom: #1f2937;
-
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
 }
- 
+
+caption
+{
+    color: #1f2937;
+    font-weight: bold;
+    font-size: 1.4rem;
+    
+    
+}
+
+thead
+{
+    background: linear-gradient(90deg, #2563eb 0% #16a34a 100%);
+}
+
+
 /* Parte de cima da tabela/Legendas */
-table th
+th
 {
     background-color: #2563eb;
     color: #e5e7eb;
     padding: 5px;
     border: 10px;
+    text-align: left;
+    border: none;
 }
 
 /* Parte de dentro da tabela */
-table td
+td
 {
     padding: 10px;
-    border-bottom: 1px solid #d1d5db;
+    text-align: left;
+    border: none;
+    
 }
 
 
