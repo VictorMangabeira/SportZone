@@ -1,9 +1,11 @@
-/* Gonfiguração universal da página*/
+/* Configuração universal da página*/
 
 *
 {
+    /* Controle das margens */
     margin: 0;
     padding: 0;
+    /* controle da largura total do fomulario */
     box-sizing: border-box;
 }
 
@@ -11,27 +13,37 @@
 
 body
 {
+    /* Fonte da página */
     font-family: system-ui;
-    
+    /* Cor da página */
     color: #e5e7eb;
+    /* Altura das linhas da pagina */
     line-height: 1.6;
+    /* Cor de fundo */
+    background-color: #e5e7eb;
 }
 
 /* Personalizar a seleção de texto */
 
 ::selection
 {
+    /* Cor de fundo da seleção de texto */
     background-color: #e5e7eb;
+    /* Cor da letra ao selecionar o texto */
     color: #2563eb;
 }
 
-/* Titulo principal  */
+/* Configuração do titulo principal  */
 
 h1
 {
+    /* Margem da parte de baixo d */
     margin-bottom: 10px;
+    /* Altura das linhas */
     line-height: 1.25;
+    /* Tamanho da fonte do titulo */
     font-size: 2.4rem;
+    /* Cor do titulo */
     color: #e5e7eb; 
 }
 
@@ -39,8 +51,11 @@ h1
 
 header
 {
-    background-image:  linear-gradient(90deg, #2563eb 50% #16a34a 100%);
-    padding: 0px 20px;
+    /* Cor de fundo em degrade, 90deg algulo, e cores */
+    background: linear-gradient(90deg,#2563eb 0%, #16a34a);
+    /* Espaçamento do topo da tela, primeiro numero e altura, segunda e largura */
+    padding: 30px 20px;
+    /* Alinhamento do texto */
     text-align: center;
    
 }
@@ -49,8 +64,11 @@ header
 
 nav
 {
+    /* Cor de fundo da navegação da página */
     background-color: linear-gradient(90deg, #2563eb 70% #16a34a 30%);
-    position:sticky;
+    /* Posição da navegação da página * sticky * para ficat sobrepondo sobre a pagina toda*/
+    position: sticky;
+    /* Fixa no topo da página/tela */
     top: 0;
 }
 
@@ -58,58 +76,80 @@ nav
 
 nav ul
 {
+    /* Deixa as barras de navegação lado a lado*/
     display: flex;
+    /* Alinhamento horizontal */
     justify-content: center;
+    /* Remove marcadores de lista */
     list-style: none;
+    /* Espaçamento da parte de cima da navegação */
     padding: 10px;
-    margin: 0;
+    /* Margem da navegação */
+    margin: 0px;
 }
 
+/* Altera os linkes dentro da navegação */
 nav a
 {
+    /* Tira a lista de baixo dos nomes do navegador */
+    text-decoration: none;
+    /* Cor do texto da navegação */
     color: #e5e7eb;
+    /* Espaçamento entre os linkes da navegação */
     padding: 20px;
 }
 
+/* Configuração ao passar o mouse no navegador */
 nav a:hover
 {
+    /* Cor de fundo */
     background-color: #2563eb;
+    /* Cor do texto */
     color: #e5e7eb;
+    /* Deixa as bordas arredondadas */
     border-radius: 5px;
 }
 
 
 /* Estrutura principal/corpo da pagina */
 
-/* Segundo titulo  */
+/* Configuração do segundo titulo  */
 h2
 {
+    /* Tamanho da fonte */
     font-size: 1.9rem;
+    /* Margem do top do texto */
     margin-top: 35px;
-
 }
-
+/* Configuração dos paragrafos * p * */
 p
 {
+    /* Tamanho da fonte dos paragrafos * p * */
     font-size: 1.49rem;
 }
-/* Titulo da primeira seção */
+/* Configuração do titulo da primeira seção */
 h3
 {
+    /* Tamanho da fonte */
     font-size: 1.50rem;
+    /* Margem do top do texto */
     margin-top: 50px;
 }
-/* Titulo dentro da primeira seção */
+/* Configuração do titulo dentro da primeira seção */
 h4
 {
+    /* Tamanho da fonte */
     font-size: 1.3rem;
 }
 
-/* Corpo da pagina */
+/* Configuração do corpo principal da pagina */
 main
 {
+    /* Largura máxima da estrutura/conteudo da página */
     max-width: 950px;
+    /* Espaçamento de dentro para fora/centralização */
     margin: 30px auto;
+    /* Espaçamento das laterais */
     padding: 0 20px;
 }
 
@@ -117,28 +157,40 @@ main
 
 main section
 {
+    /* Cor de fundo da seções/cards */
     background-color: #ffffff;
+    /* Cor do texto */
     color: #1f2937;
+    /* Arredondamento dos cards/seções */
     border-radius: 1px;
+    /* Alinhamento dos cards no centro */
     text-align: center;
+    /* Espaçamento da borda inferior/ parte de baixo */
     margin-bottom: 100px;
 }
 
-/* Configuração especifica, usamos O ."nome da class" */
+/* Configuração dos campos especificos, com o * class *  nos paragrafos da lista */
+/* Configuração especifica, usamos O * ."nome da class" * */
 .Dias
 {
+    /* Cor do texto */
     color: #2563eb;
+    /* Deixa o texto em negrito */
     font-weight: 500;
+    /* Tamanho da fonte */
     font-size: 17px;
 }
 
 .Campeonato
 {
+    /* Tamanho da fonte */
     font-size: 17px;
 }
 
+/* Configuração das figurinhas no paragrafos */
 .fonte
 {
+    /* Tamanho da fonte */
     font-size: 30px;
 }
 
@@ -149,67 +201,195 @@ main section
 
 table
 {
+    /* Ocupação total da tabela na página  */
     width: 100%;
+    /* Cor de fundo */
     background-color: #ffffff;
+    /* Cor do texto */
     color: #1f2937;
+    /* Espaçamento das laterais so com um numero */
     padding: 10px;
+    /* Junta as celulas da tabela */
     border-collapse: collapse;
+    /* Tira as bordas da tabela */
     border: none;
+    /* Arredonda dos cantos da tabela */
     border-radius: 10px;
+    /* Remove qualquer vazamento de dentro da tabela, deixando o layuot limpo */
     overflow: hidden;
 }
 
+/* Configuração do Titulo da tabela */
 caption
 {
+    /* Cor do texto */
     color: #1f2937;
+    /* Texto em negrito */
     font-weight: bold;
+    /* Tamanho da fonte */
     font-size: 1.4rem;
-    
-    
 }
 
+/* Cabeça da tabela  */
 thead
 {
+    /* Cor de fundo em degrade, 90deg algulo, e cores */
     background: linear-gradient(90deg, #2563eb 0% #16a34a 100%);
 }
 
 
-/* Parte de cima da tabela/Legendas */
+/* Configuração da parte de cima da tabela/Legendas */
 th
 {
+    /* Cor de fundo do cabeçario da tabela */
     background-color: #2563eb;
+    /* Cor do texto */
     color: #e5e7eb;
+    /* Espaçamento laateral/largura das celulas/texto */
     padding: 5px;
-    border: 10px;
-    text-align: left;
+    /* Borda/linhas de dentro das celulas do cabeçario da tabela/ sem as bordas/linhas*/
     border: none;
+    /* Alinhamento do texto á esquerda da tabela*/
+    text-align: left;
+    /* Borda inferior do cabeçario da tabela*/
+    border-bottom: 1px solid #ddd; 
 }
 
-/* Parte de dentro da tabela */
+/* Configuração da parte de dentro da tabela/conteudo */
 td
 {
+    /* Espaçamento lateral/largura das celulas/texto */
     padding: 10px;
+    /* Alinhamento do texto à esquerda da tabela*/
     text-align: left;
+    /* Tira todas as bordas de dentro da tabela/conteudo/corpo */
     border: none;
-    
+    /* Adiciona somente a borda inferior de dentro da tabela/conteudo/corpo */
+    border-bottom:1px solid #ddd;
+  
 }
 
+/* Configuração dos cantos da tabela */
+/* Configuração das primeiras bordas do cabeçario * :first-child * e do corpo * :first-child *da tabela/ arredondamento dos cantos  */
+th:first-child, td:first-child
+{
+    border-top-left-radius: 7px;
+}
+
+/* Configuração das ultimas bordas do cabeçario * :last-child * e do corpo * :last-child * da tabela/ arredondamento dos cantos  */
+th:last-child, td:last-child
+{
+    border-top-right-radius: 7px;
+}
 
 /* Configuração do formulario */
 
 form
 {
+    /* Difine as colunas do formulario, colocando um embaixo do outro */
     display: grid;
-    gap: 15px;
+    /* Faz o espaçamento verticalmente entre cada linha da tabela */
+    gap: 10px;
+    
+    
 }
 
 /* Texto dentro do formulario */
-
 label
 {
-    font-weight: bold;
+    /* Deixa a fonte em negrito */
+    font-weight:500;
+    /* Cor do texto */
+    color: #1f2937;
+    /* Alinhamento do texto à esquerda */
+    text-align: left;
+}
+
+/* Configuração da entrada de dados do usuario */
+input,textarea
+{
+    /* Ocupação total do formulario na página  */
+    width: 100%;
+    /* Espaçamento lateral/largura e vertical das celulas/texto do formulario */
+    padding: 10px 12px;
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Bordas  */
+    border: 1px solid #e5e7eb;
+    /* Arredondamento dos cantos */
+    border-radius: 5px;
+    /* Cor do texto */
     color: #1f2937;
 }
 
-input
-/* Como colocar infomaçoes dentro da mensagem de etxto * placeholder"teste" */
+/* Configuração do foco nos campos de entrada/caixa de entrada */
+input:focus, textarea:focus
+{
+    /* Cor da borda ao clicar no campo */
+    border-color: #1f2937;
+    /* Remove o contorno padrão ao clicar no campo */
+    outline: none;
+}
+
+/* Configuração do botão do formulario */
+button
+{
+    /* Alinha o botão ao centro da celula do formulario * (self) = item * *(justify) = eixo horizontal * */
+    justify-self:center;
+    /* Margem do top do botão */
+    margin-top: 20px;
+    /* Cor de fundo em degrade no botão */
+    background: linear-gradient(90deg, #2563eb 50% #16a34a 50%);
+    /* Cor do texto */
+    color: #ffffff;
+    /* Bordas */
+    border: 1px solid;
+    /* Espaçamento largura/ e verticalmente */
+    padding: 15px 15px;
+    /* Arredondamento das bordas */
+    border-radius: 5px;
+    /* Muda o curso do mouse, ao ficar em cima do botão*/
+    cursor: pointer;
+    /* Sombras nas bordas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Ocupação total do botão do formulario na página  */
+    width: 25%;
+}
+
+/* Como colocar infomaçoes dentro da mensagem de texto * placeholder"teste" */
+
+
+footer
+{
+    /* Cor de fundo do rodapé */
+    background-color: #1f2937;
+    /* Cor do texto */
+    color: #e5e7eb;
+    /* Alinhamento do texto ao centro */
+    text-align: center;
+    /* Espaçamento do rodapé */
+    padding: 50px;
+    /* Margem do top do rodapé */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.rodape
+{
+    /* Tamanho da fonte */
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
