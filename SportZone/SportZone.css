@@ -150,7 +150,7 @@ main
     /* Espaçamento de dentro para fora/centralização */
     margin: 30px auto;
     /* Espaçamento das laterais */
-    padding: 0 20px;
+    padding: 0px;
 }
 
 /* Configuração da sections/seções meio da pagina */
@@ -158,11 +158,11 @@ main
 main section
 {
     /* Cor de fundo da seções/cards */
-    background-color: #ffffff;
+    background-color: #e5e7eb;
     /* Cor do texto */
     color: #1f2937;
     /* Arredondamento dos cards/seções */
-    border-radius: 1px;
+    /* border-radius: 1px; */
     /* Alinhamento dos cards no centro */
     text-align: center;
     /* Espaçamento da borda inferior/ parte de baixo */
@@ -228,21 +228,21 @@ caption
     font-weight: bold;
     /* Tamanho da fonte */
     font-size: 1.4rem;
+    /* Espaçamento da borda inferior/ parte de baixo */
+    margin-bottom: 40px;
 }
 
 /* Cabeça da tabela  */
 thead
 {
     /* Cor de fundo em degrade, 90deg algulo, e cores */
-    background: linear-gradient(90deg, #2563eb 0% #16a34a 100%);
+    background: linear-gradient(90deg, #2563eb 0%, #16a34a 100%);
 }
 
 
 /* Configuração da parte de cima da tabela/Legendas */
 th
 {
-    /* Cor de fundo do cabeçario da tabela */
-    background-color: #2563eb;
     /* Cor do texto */
     color: #e5e7eb;
     /* Espaçamento laateral/largura das celulas/texto */
@@ -252,7 +252,8 @@ th
     /* Alinhamento do texto á esquerda da tabela*/
     text-align: left;
     /* Borda inferior do cabeçario da tabela*/
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid;
+    border-radius: 1px solid linear-gradient(90deg,#2563eb 0%, #16a34a 100%);
 }
 
 /* Configuração da parte de dentro da tabela/conteudo */
@@ -265,7 +266,7 @@ td
     /* Tira todas as bordas de dentro da tabela/conteudo/corpo */
     border: none;
     /* Adiciona somente a borda inferior de dentro da tabela/conteudo/corpo */
-    border-bottom:1px solid #ddd;
+    border-bottom:1px solid #e5e7eb;
   
 }
 
@@ -281,6 +282,11 @@ th:last-child, td:last-child
 {
     border-top-right-radius: 7px;
 }
+/* Sombra da ultima borda do corpo da tabela */
+td:last-child
+{
+    border-radius: 1px solid #1f291f;
+}
 
 /* Configuração do formulario */
 
@@ -290,8 +296,10 @@ form
     display: grid;
     /* Faz o espaçamento verticalmente entre cada linha da tabela */
     gap: 10px;
-    
-    
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 20px;
+ 
 }
 
 /* Texto dentro do formulario */
@@ -317,7 +325,7 @@ input,textarea
     /* Bordas  */
     border: 1px solid #e5e7eb;
     /* Arredondamento dos cantos */
-    border-radius: 5px;
+    border-radius: 5px solid #e5e7eb;
     /* Cor do texto */
     color: #1f2937;
 }
@@ -338,22 +346,24 @@ button
     justify-self:center;
     /* Margem do top do botão */
     margin-top: 20px;
+    /* Margem da parte de baixo do botão */
+    margin-bottom: 30px;
     /* Cor de fundo em degrade no botão */
-    background: linear-gradient(90deg, #2563eb 50% #16a34a 50%);
+    background: linear-gradient(90deg, #2563eb 0%, #16a34a 100%);
     /* Cor do texto */
     color: #ffffff;
     /* Bordas */
     border: 1px solid;
     /* Espaçamento largura/ e verticalmente */
-    padding: 15px 15px;
+    padding: 15px 5px;
     /* Arredondamento das bordas */
-    border-radius: 5px;
+    border-radius: 10px;
     /* Muda o curso do mouse, ao ficar em cima do botão*/
     cursor: pointer;
     /* Sombras nas bordas */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     /* Ocupação total do botão do formulario na página  */
-    width: 25%;
+    width: 20%;
 }
 
 /* Como colocar infomaçoes dentro da mensagem de texto * placeholder"teste" */
