@@ -288,6 +288,22 @@ td:last-child
     border-radius: 1px solid #1f291f;
 }
 
+.Titulo-formulario
+{
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+}
+
+.Negrito
+{
+    font-weight: bold;
+}
+
+.texto-formulario
+{
+    font-size: 1.2rem;
+}
+
 /* Configuração do formulario */
 
 form
