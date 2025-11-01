@@ -288,32 +288,41 @@ td:last-child
     border-radius: 1px solid #1f291f;
 }
 
+/* Configuração especifica do tirulo do formulario */
 .Titulo-formulario
 {
+    /* Tamanho do texto/fonte */
     font-size: 1.9rem;
+    /* Distancia da margem inferior do titulo do formulario */
     margin-bottom: 20px;
 }
 
+/* Configuração especifica de textos da tabela/ deixando em negrito apenas os campos especifico com o * Class *  */
 .Negrito
 {
+    /* Fonte/texto em negrito */
     font-weight: bold;
 }
 
+/* Configuração especifica do texto do formulario */
 .texto-formulario
 {
+    /* Tamanho da fonte/texto */
     font-size: 1.2rem;
 }
 
 /* Configuração do formulario */
-
 form
 {
     /* Difine as colunas do formulario, colocando um embaixo do outro */
     display: grid;
     /* Faz o espaçamento verticalmente entre cada linha da tabela */
     gap: 10px;
+    /* Cor de fundo */
     background-color: #ffffff;
+    /* Espaçamento das laterais e verticais  */
     padding: 20px 30px;
+    /* Arredondamento das bordas */
     border-radius: 20px;
  
 }
@@ -384,7 +393,9 @@ button
 
 /* Como colocar infomaçoes dentro da mensagem de texto * placeholder"teste" */
 
+/* COnfiguração da parte inferior/baixo da página */
 
+/* Configuração do rodape */
 footer
 {
     /* Cor de fundo do rodapé */
@@ -400,6 +411,7 @@ footer
     margin-bottom: 0px;
 }
 
+/* COnfiguração especifica do texto do rodape */
 .rodape
 {
     /* Tamanho da fonte */
